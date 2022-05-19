@@ -104,6 +104,59 @@
 				<p>
 					It is essentially a vast serialized object store that allows one to retrieve objects by ID. It generally lacks an organized schema and does not handle complex queries. It encourages denormalization and is built from the ground to be distributed (cloud-scale). As a result, the ACID criteria are no longer required. Any database may answer any query, and any write query can act on any database, ultimately propagating to other distributed servers. Any server may respond to any query thanks to the distributed paradigm. Behind the scenes, servers speak with one another at their own pace. The server that responds to one's query might not have the most up-to-date information. As you have mentioned, NoSQL databases have a great application with the social media platforms but are still not popular enough for the large majority of corporate entities.
 				</p>
+				<hr>
+				<h4>Peer Response to Nicolas Haas</h4>
+				<p>
+					Hi Nicolas,<br/> <br/>
+					thank you for your contribution - I found it quite insightful.
+				</p>
+				<p>
+					Utilizing NoSQL databases can definitely allow for more flexibility, especially when we have use cases such as the paragraph example you mentioned. I find that the aforementioned flexibility can have unforeseen costs later. For example the lack of consistency will force developers to write additional code for handling missing values, which would otherwise be handling direclty in the database. If we work with databases, which store data in key-value format, we are risking data inconsistency for certain keys, or rather columns (in relational db sense). All constraints would have to be handled directly in the application logic, rather than in the SQL code, within the database itself.
+				</p>
+				<p>
+					One benefit that traditional relational databases have is indexing. Indexes are a powerful tool used in the background of a database to speed up querying. Indexes power queries by providing a method to quickly lookup the requested data (Codecademy, n.d.).
+				</p>
+				<p>
+					To summarize, it can be concluded that there are two main benefits to NoSQL databases over traditional relational databases. First benefit is the flexibility that the NoSQL databases/stores offer. The second benefit is the cost. NoSQL databases are generally economical, i.e. cost-effective and can even be used for free, whereas the cost for 100 GB / month for cloud-based RDMS systems vs. NoSQL solutions is around 50 times greater than for the same amount of non-relational storage (lynnlangit, 2011).
+				</p>
+				<p>
+					<strong>Reference list</strong><br/>
+					Codecademy. (n.d.). What is a Database Index? <br/> Available at: https://www.codecademy.com/article/sql-indexes [Accessed 19 May 2022].
+					<br/><br/>
+					lynnlangit (2011) Relational Cloud Storage is 50X More Expensive than NoSQL. <br/> Available at: https://lynnlangit.com/2011/11/09/relational-cloud-storage-is-50x-more-expensive-than-nosql/ [Accessed 19 May 2022].
+				</p>
+				<hr>
+				<h4>Summary Post</h4>
+				<p>
+					The possibilities for document database applications are nearly endless. Consider NoSQL as an ERP option (Enterprise Resource Planning). The typical relational ERP database has begun to look like a piece of history, with PDFs, image files, audio files, metadata, and more now deemed critical corporate understanding.
+				</p>
+				<p>
+					Depending on the NoSQL database, JSON documents, graphs with nodes and edges, or key-value pairs can represent data.
+					<br/>
+					Web apps which use RESTful APIs or need real-time data can be easily constructed by utilizing the advantages of the NoSQL databases.
+				</p>
+				<p>
+					These databases offer flexibility for data that has not been normalized, needs a flexible data model, or has various features for distinct data entities. In addition, they provide scalability for larger data sets.
+					<br/>
+					Key-value stores are employed when a customer demands outstanding performance for serving queries on read-only data, such as for big, heavily trafficked websites (Datanami, 2021). For key-value storage, there is no query language; instead, developers use conventional CRUD commands.
+				</p>
+				<p>
+					While NoSQL databases have many benefits, they also come with some drawbacks. They are designed for specific use cases, while SQL databases are more suitable for general-purpose use cases.
+				</p>
+				<p>
+					Due to the eventual consistency model used by almost all the NoSQL databases, they can not provide the same level of consistent data as SQL databases. Data can sometimes be inconsistent, making them unsuitable for instantaneous integrity activities, such as banking or ATM transactions (SearchDataManagement, n.d.).
+					<br/>
+					Another significant issue with NoSQL databases is the lack of industry standards compared to their relational, well-established counterpart. This is, of course, due to their novelty.
+				</p>
+				<p>
+					Relational databases will be around for many years, but NoSQL databases today are giving their relational cousins a run for their money, which is a great benefits to users (Datanami, 2021).
+				</p>
+				<p>
+					<strong>Reference list</strong><br/>
+					Datanami. (2021) There’s a NoSQL Database for That. <br/>Available from: https://www.datanami.com/2021/07/22/theres-a-nosql-database-for-that/ [Accessed 19 May 2022].
+					<br/><br/>
+					SearchDataManagement. (n.d.). What is NoSQL and How do NoSQL Databases Work? <br/>Available at: https://www.techtarget.com/searchdatamanagement/definition/NoSQL-Not-Only-SQL. [Accessed 19 May 2022]
+				</p>
 			</div>
 		</section>
 
