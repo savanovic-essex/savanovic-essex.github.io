@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+  <title>Secure Software Development - Djordje Savanovic - e-Portfolio</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <noscript>
+    <link rel="stylesheet" href="../assets/css/noscript.css"/>
+  </noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+  <!-- Header -->
+  <header id="header" class="alt">
+    <a href="../index.html" class="logo"><span>Djordje Savanovic</span> <strong>e-Portfolio</strong></a>
+    <nav>
+      <a href="#menu">Menu</a>
+    </nav>
+  </header>
+
+  <!-- Menu -->
+  <nav id="menu">
+    <ul class="links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../launching-into-computer-science.html">Launching into Computer Science</a></li>
+      <li><a href="../oois/object-oriented-information-systems.html">Object-oriented Information Systems</a></li>
+      <li><a href="../ssdcs/secure-software-development.html">Secure Software Development (Computer Science)</a></li>
+      <li><a href="../network-and-information-security-management.html">Network and Information Security Management</a></li>
+      <li><a href="../software-engineering-project-management.html">Software Engineering Project Management</a></li>
+      <li><a href="../research-methods-and-professional-practice.html">Research Methods and Professional Practice</a></li>
+      <li><a href="../msc-computing-project-and-dissertation.html">MSc Computing Project and Dissertation</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <!-- Note: The "styleN" class below should match that of the header element. -->
+  <section id="banner" class="style2">
+    <div class="inner">
+							<span class="image">
+								<img src="../images/pic07.jpg" alt=""/>
+							</span>
+      <header class="major">
+        <h1>Secure Software Development (Computer Science)</h1>
+      </header>
+      <div class="content">
+        <p>Information about Secure Software Development module</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <div id="main">
+
+    <section>
+      <div class="inner">
+        <header class="major">
+          <h2>Codio Activity - Equivalence Testing in Python</h2>
+        </header>
+        <h4>Exploring Linters to Support Testing in Python: Question 1</h4>
+        <div class="row">
+          <div class="col-6">
+            <img src="../images/styleLint1.png" alt="styleLint.py Terminal" width="580"/>
+            <img src="../images/styleLint2.png" alt="styleLint.py Codio" width="580"/>
+            <img src="../images/styleLint3.png" alt="styleLint.py Github" width="580"/>
+          </div>
+          <div class="col-6">
+            <p>
+              When I compiled and ran the code, the programme crashed with the following error message: <br/>
+              <code>
+                File "styleLint.py", line 5 <br/>
+                """ Return factorial of n """ <br/>
+                IndentationError: expected an indented block
+              </code>
+            </p>
+            <p>
+              Based on this error message, I have concluded that the fix for the bug causing it is actually quite simple.
+              The problem in this case is the incorrect, or rather missing indentation (required in Python).
+            </p>
+            <p>
+              In order to fix this bug, I added indentation to the comment on line 5, as well as proper indentation within the function itself.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <h4>Exploring Linters to Support Testing in Python: Question 2</h4>
+        <div class="row">
+          <div class="col-6">
+            <img src="../images/pylintTest1.png" alt="pylintTest.py Terminal Error" width="580"/>
+            <img src="../images/pylintTest2.png" alt="pylintTest.py Terminal Success" width="580"/>
+          </div>
+          <div class="col-6">
+            <p>
+              I tried to install pylint, but it kept throwing an error. I managed to find a solution on Stackoverflow, which was to upgrade pip: <br/>
+              <code>python -m pip install --upgrade pip</code>
+              <br />
+              Afterwards, I successfully installed pylint.
+            </p>
+            <p>
+              pylint served as a great ally in this process, as it pinpointed to every problem in the code and even offered solutions to some of them.
+              I am proud to say that I fixed every single issue detected by pylint, as you may see in the second screenshot.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <h4>Exploring Linters to Support Testing in Python: Question 3</h4>
+        <div class="row">
+          <div class="col-6">
+            <img src="../images/pylintTest3.png" alt="pylintTest.py flake8" width="580"/>
+          </div>
+          <div class="col-6">
+            <p>
+              Error report produced by flake8 is in many ways similar to the one from pylint. It differs from pylint in its structure.
+              I found the flake8 report to be more readable, it offers error codes, which can be looked up on their website.
+              For example the most common error code that it produced in this report was <code>E111</code>, which means that the
+              indentation is not a multiple of 4.
+              <br />
+              Explanations and examples can be found on the following link:
+              <a href="https://www.flake8rules.com/rules/E111.html">https://www.flake8rules.com/rules/E111.html</a>
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-6">
+            <img src="../images/metricTest.png" alt="metricTest.py flake8" width="580"/>
+          </div>
+          <div class="col-6">
+            <p>
+              I received a rather large amount of errors after running flake8 on the metricTest.py file.
+              This file had line numbers on every line. <br/>
+              I managed to solve almost all the problems - only one of them persisted (visible in the screenshot). <br/>
+              You can find the code, i.e. my amendments to it on the following link: <br/>
+              <a href="https://github.com/savanovic-essex/testing-with-python/blob/master/metricTest.py">https://github.com/savanovic-essex/testing-with-python/blob/master/metricTest.py</a>
+            </p>
+          </div>
+        </div>
+        <hr />
+        <h4>Exploring Linters to Support Testing in Python: Question 4</h4>
+        <div class="row">
+          <div class="col-6">
+            <img src="../images/mccabe.png" alt="mccabe" width="580"/>
+          </div>
+          <div class="col-6">
+            <p>
+              I was unfortunately not able to install mccabe and hence can not answer the fourth question.
+              You can see the console log in the screenshot.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <ul class="icons">
+        <li><a href="https://github.com/djordjesavanovic" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="https://www.linkedin.com/in/djordjesavanovic/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>Djordje Savannovic - e-Portfolio</li>
+        <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery.scrolly.min.js"></script>
+<script src="../assets/js/jquery.scrollex.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
