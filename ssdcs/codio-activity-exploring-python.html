@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+  <title>Secure Software Development - Djordje Savanovic - e-Portfolio</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <noscript>
+    <link rel="stylesheet" href="../assets/css/noscript.css"/>
+  </noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+  <!-- Header -->
+  <header id="header" class="alt">
+    <a href="../index.html" class="logo"><span>Djordje Savanovic</span> <strong>e-Portfolio</strong></a>
+    <nav>
+      <a href="#menu">Menu</a>
+    </nav>
+  </header>
+
+  <!-- Menu -->
+  <nav id="menu">
+    <ul class="links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../launching-into-computer-science.html">Launching into Computer Science</a></li>
+      <li><a href="../oois/object-oriented-information-systems.html">Object-oriented Information Systems</a></li>
+      <li><a href="../ssdcs/secure-software-development.html">Secure Software Development (Computer Science)</a></li>
+      <li><a href="../network-and-information-security-management.html">Network and Information Security Management</a></li>
+      <li><a href="../software-engineering-project-management.html">Software Engineering Project Management</a></li>
+      <li><a href="../research-methods-and-professional-practice.html">Research Methods and Professional Practice</a></li>
+      <li><a href="../msc-computing-project-and-dissertation.html">MSc Computing Project and Dissertation</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <!-- Note: The "styleN" class below should match that of the header element. -->
+  <section id="banner" class="style2">
+    <div class="inner">
+							<span class="image">
+								<img src="../images/pic07.jpg" alt=""/>
+							</span>
+      <header class="major">
+        <h1>Secure Software Development (Computer Science)</h1>
+      </header>
+      <div class="content">
+        <p>Information about Secure Software Development module</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <div id="main">
+
+    <section>
+      <div class="inner">
+        <header class="major">
+          <h2>Codio Activity - Exploring Python tools and features</h2>
+        </header>
+        <h4>Part One</h4>
+        <div class="row">
+          <div class="col-6">
+            <img src="../images/codio-activity-exploring-python-one.png" alt="Screenshot" width="580"/>
+          </div>
+          <div class="col-6">
+            <p>
+              When I compiled the code for the first time and entered my name (Djordje - 7 characters) the programme ran as expected, without any problems.
+              The output was the string "Djordje".
+            </p>
+            <p>
+              For the second text, I tried entering <code>./bufoverflow</code>, but it was unsuccessful - Codio's terminal could not fine that file for some reason and I received the following error message <code>-bash: ./buferoverflow: No such file or directory</code>.
+              Once the aforementioned command failed, I decided to run the code by clicking the "Compile & Run" button and then it worked fine.
+            </p>
+            <p>
+              As you may see in the screenshot above, for the second run, I entered a 13-charachter string "Djordjeeeeeee" and the programme crashed with the following error message:
+              <code>*** stack smashing detected ***: < unknown > terminated</code>.
+              <code>Aborted (core dumped)</code>
+            </p>
+            <p>
+              From my understanding the string that I have entered has exceeded the buffer's capacity, which caused the buffer overflow error.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <h4>Part Two</h4>
+        <div class="row">
+          <div class="col-6">
+            <img src="../images/overflow-py.png" alt="Overflow.py" width="580" />
+            <hr />
+            <img src="../images/pylint-overflow-py.png" alt="Pylint" width="580" />
+          </div>
+          <div class="col-6">
+            <p>
+              I tried running the Overflow.py file and it crashed with the following error message: <br />
+              <code>File "Overflow.py", line 3, in &lt;module&gt; <br />
+                buffer[i]=7
+              </code>
+              <br/>
+              <code>IndexError: list assignment index out of range</code>
+            </p>
+            <p>
+              For the second part of this assignment, I installed <code>pylint</code> and ran the <code>pylint Overflow.py</code> command
+              in order to start the linter on the Overflow.py file.
+            </p>
+            <p>
+              The results were satisfying in a way that they provided me with enough information about the inaccuracies/mistakes in the code.
+              Based on this information, I can fix the code. It does not necessarily tell me how to fix the code, but it pinpoints the exact places where the code is faulty.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <ul class="icons">
+        <li><a href="https://github.com/djordjesavanovic" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="https://www.linkedin.com/in/djordjesavanovic/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>Djordje Savannovic - e-Portfolio</li>
+        <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery.scrolly.min.js"></script>
+<script src="../assets/js/jquery.scrollex.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

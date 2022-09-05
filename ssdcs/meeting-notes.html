@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+  <title>Secure Software Development - Djordje Savanovic - e-Portfolio</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <noscript>
+    <link rel="stylesheet" href="../assets/css/noscript.css"/>
+  </noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+  <!-- Header -->
+  <header id="header" class="alt">
+    <a href="../index.html" class="logo"><span>Djordje Savanovic</span> <strong>e-Portfolio</strong></a>
+    <nav>
+      <a href="#menu">Menu</a>
+    </nav>
+  </header>
+
+  <!-- Menu -->
+  <nav id="menu">
+    <ul class="links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../launching-into-computer-science.html">Launching into Computer Science</a></li>
+      <li><a href="../oois/object-oriented-information-systems.html">Object-oriented Information Systems</a></li>
+      <li><a href="../ssdcs/secure-software-development.html">Secure Software Development (Computer Science)</a></li>
+      <li><a href="../network-and-information-security-management.html">Network and Information Security Management</a></li>
+      <li><a href="../software-engineering-project-management.html">Software Engineering Project Management</a></li>
+      <li><a href="../research-methods-and-professional-practice.html">Research Methods and Professional Practice</a></li>
+      <li><a href="../msc-computing-project-and-dissertation.html">MSc Computing Project and Dissertation</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <!-- Note: The "styleN" class below should match that of the header element. -->
+  <section id="banner" class="style2">
+    <div class="inner">
+							<span class="image">
+								<img src="../images/pic07.jpg" alt=""/>
+							</span>
+      <header class="major">
+        <h1>Secure Software Development (Computer Science)</h1>
+      </header>
+      <div class="content">
+        <p>Information about Secure Software Development module</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <div id="main">
+
+    <section>
+      <div class="inner">
+        <header class="major">
+          <h2>Team Project: Secure (Digital) Repository for the Dutch National Cyber Security Center</h2>
+        </header>
+        <h4>Meeting minutes</h4>
+        <p>
+          <strong>Team meeting 27.06.22: minutes & actions</strong>
+          <ol>
+            <li>
+              We discussed which programming language / app development platform to use:
+              <ul>
+                <li>
+                  Flask and Python were preferred, based on group members’ experience (Django could be possible)
+                </li>
+                <li>
+                  Djordje suggested using Firebase as the platform – specifically the Cloud Firestore – as a simple solution to build a database and connect frontend
+                </li>
+              </ul>
+            </li>
+            <li>
+              Mohammed had made a summary of the brief to break down the requirements clearly:
+              <ul>
+                <li>
+                  We discussed choosing the domain and the assessing domain-specific requirements – Djordje mentioned that it was possible to use Heroku.com or AWS to assess the requirements
+                </li>
+                <li>
+                  We collectively decided that the Dutch Police Internet Forensics domain was the most appropriate for the project
+                </li>
+              </ul>
+            </li>
+            <li>
+              To keep track of meeting progress, Djordje suggested we start a jira workspace, in a similar approach to SCRUM
+            </li>
+            <li>
+              We collectively decided we need to clarify what is expected in terms of use of programming languages/ concurrent events / the mircoservice application version
+            </li>
+          </ol>
+        </p>
+        <hr/>
+        <p>
+          <strong>Team meeting 04.07.22: minutes & actions</strong>
+          <ol>
+            <li>
+              Djordje updated us on the tools that we will be using for the application. These are:
+              <ul>
+                <li>Front end : Reactjs</li>
+                <li>Databases: Firebase Realtime except for documents and images will be saved to Firebase cloud.</li>
+                <li>Event monitoring :Firebase events</li>
+              </ul>
+              <ul>
+                <li>
+                  Djordje mentioned that we received a positive feedback form Dr. peoples regarding how are we going to implement the application.
+                </li>
+                <li>
+                  We discussed that Firebase products will be able to handle most of the application requirements natively including user registration, authentication, storage.
+                </li>
+                <li>
+                  We agreed that data security should be implemented as the following:
+                  <ul>
+                    <li>Using HTTPs for data transmission.</li>
+                    <li>Encrypting sensitive data that will be identified at the design stage.</li>
+                  </ul>
+                </li>
+                <li>
+                  We discussed that meeting the GDPR requirements may not be necessary as this application will be for police internal use. However, this will be verified once the application specifications are finalized.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </p>
+        <hr />
+        <p>
+          <strong>Team meeting 11.07.22: minutes & actions</strong>
+          <ol>
+            <li>
+              Djordje gave us an update about his search for the encryption methods available for the Firebase database. He will continue his search to find a way to decrypt the data.
+            </li>
+            <li>
+              We worked on a sitemap for the web application using https://app.diagrams.net.
+            </li>
+            <li>
+              We agreed on the user types to be as the following:
+              <ul>
+                <li>Super admin/admin be responsible for adding the cyber specialists to the system internally without a registration form.</li>
+                <li>Cyber specialists will be responsible for adding new reports or working on publicly submitted reports.</li>
+              </ul>
+            </li>
+            <li>
+              Djordje shared a link on how to build an app using ReactJS and Firebase Realtime Database.
+            </li>
+          </ol>
+        </p>
+        <hr />
+        <p>
+          <strong>Team meeting 18.07.22: minutes & actions</strong>
+          <ol>
+            <li>
+              Djordje informed us about the data encryption solution and testing framework that he found suitable for our project:
+              <ul>
+                <li>Encryption : Crypto JS library that uses AES.</li>
+                <li>Testing: Jest framework.</li>
+              </ul>
+            </li>
+            <li>
+              We finalized the UML diagrams.
+            </li>
+            <li>
+              We also reviewed the design document draft that we will send to Dr. Peoples for approval.
+            </li>
+          </ol>
+        </p>
+        <hr />
+        <p>
+          <strong>Team meeting 08.08.22: minutes & actions</strong>
+          <ol>
+            <li>
+              We discussed the implementation progress. Djordje demonstrated the basic features of the application that were completed so far including:
+              <ul>
+                <li>Private routes.</li>
+                <li>The public route for adding public reports.</li>
+                <li>Adding reports, authorities, and IT Updates.</li>
+                <li>Viewing list of reports, authorities, and IT Updates.</li>
+              </ul>
+            </li>
+          </ol>
+        </p>
+        <hr />
+        <p>
+          <strong>Team meeting 22.08.22: minutes & actions</strong>
+          <ol>
+            <li>
+              We discussed the implementation progress including adding tests and from validations.
+            </li>
+            <li>
+              Djordje presented the outline of the presentation for out team project that will take place on Thursday.
+            </li>
+          </ol>
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <ul class="icons">
+        <li><a href="https://github.com/djordjesavanovic" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="https://www.linkedin.com/in/djordjesavanovic/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>Djordje Savannovic - e-Portfolio</li>
+        <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery.scrolly.min.js"></script>
+<script src="../assets/js/jquery.scrollex.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
